@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/dialog_input_solde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Solde"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/dialog_input_date_creation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date (YYYY-MM-DD)"
+            android:inputType="date"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/dialog_input_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/type_compte_array"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/dialog_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Compte"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#0000FF"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

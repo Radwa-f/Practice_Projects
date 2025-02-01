@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">A_Rendre_Mobile</string>
+    <string-array name="villes_array">
+        <item>Agadir</item>
+        <item>Casablanca</item>
+        <item>Marrakech</item>
+        <item>Rabat</item>
+        <item>Tanger</item>
+    </string-array>
+</resources>

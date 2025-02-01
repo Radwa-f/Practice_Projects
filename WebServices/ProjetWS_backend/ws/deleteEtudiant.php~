@@ -1,0 +1,24 @@
+<?php
+
+use classes\Etudiant;
+use service\EtudiantService;
+
+if($_SERVER["REQUEST_METHOD"] == "DELETE"){
+    include_once '../racine.php';
+    include_once RACINE.'/service/EtudiantService.php';
+    delete();
+}
+function delete() {
+    extract($_POST); // Extract the student ID from the request
+    $es = new EtudiantService();
+
+    // Call delete method in EtudiantService, passing the student ID
+    $es->delete($id);
+
+    // Return a confirmation response
+    header('Content-type: application/json');
+    echo json_encode([
+        "message" => "Student with ID $id has been deleted.",
+        "status" => "success"
+    ]);
+}
